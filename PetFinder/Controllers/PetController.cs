@@ -29,5 +29,22 @@ namespace PetFinder.Controllers
             return View();
         }
 
+        public ActionResult Pets()
+        {
+            ViewBag.Message = "all pets.";
+            ViewBag.Content = "some conetnt";
+            ViewBag.PetID = "a pet name";
+            ViewBag.PetDetail = "a pet description";
+
+            return View();
+        }
+
+        public ActionResult Pet()
+        {
+            ViewBag.Message = "pet page";
+
+            return View();
+        }
+
     }
 }
